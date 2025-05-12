@@ -1,5 +1,6 @@
 ---
 import Aside from "../components/Aside";
+import SearchBar from "../components/SearchBar";
 import "../styles/global.css";
 // Supports weights 100-900
 import "@fontsource-variable/onest";
@@ -14,10 +15,14 @@ import "@fontsource-variable/onest";
     <meta name="generator" content={Astro.generator} />
     <title>Astro Basics</title>
   </head>
-  <body id="app" class="bg-gray-50">
+  <body id="app" class="bg-gray-200">
     <Aside />
-    <header class="[grid-area:header]"></header>
-    <main class="[grid-area:main]"></main>
+    <header class="[grid-area:header] p-4">
+      <SearchBar />
+    </header>
+    <main class="[grid-area:main] p-4">
+      <slot />
+    </main>
   </body>
 </html>
 

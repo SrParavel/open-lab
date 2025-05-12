@@ -1,0 +1,18 @@
+---
+import ProjectCard from "../components/ProjectCard";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <section>
+    <ProjectCard
+      title="Example Project"
+      description="This is a sample project description to demonstrate the ProjectCard component"
+      views={1234}
+      likes={56}
+      picture="https://placehold.co/600x400"
+      icon="https://placehold.co/100x100"
+      tags={["Sample", "Demo", "Project"]}
+    />
+  </section>
+</Layout>

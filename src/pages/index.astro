@@ -1,10 +1,27 @@
 ---
+import ProjectCard from "../components/ProjectCard";
 import Layout from "../layouts/Layout.astro";
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-  <h1>Hello World</h1>
+  <section class="grid grid-cols-4 gap-4">
+    <ProjectCard
+      title="Example Project"
+      description="This is a sample project description to demonstrate the ProjectCard component"
+      views={1234}
+      likes={56}
+      picture="https://placehold.co/600x400"
+      icon="https://placehold.co/100x100"
+      tags={["Sample", "Demo", "Project"]}
+    />
+    <ProjectCard
+      title="Example Project"
+      description="This is a sample project description to demonstrate the ProjectCard component This is a sample project description to demonstrate the ProjectCard component This is a sample project description to demonstrate the ProjectCard component"
+      views={12312}
+      likes={565}
+      picture="https://placehold.co/600x400"
+      icon="https://placehold.co/100x100"
+      tags={["Next.JS", "Demo", "Project"]}
+    />
+  </section>
 </Layout>

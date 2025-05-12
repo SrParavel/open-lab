@@ -1,4 +1,4 @@
-import { LuPanelLeft } from "react-icons/lu";
+import { LuPanelsTopLeft } from "react-icons/lu";
 import { LuSettings } from "react-icons/lu";
 import { LuLogOut } from "react-icons/lu";
 import { LuPlus } from "react-icons/lu";
@@ -12,10 +12,10 @@ import PrimaryButton from "./PrimaryButton";
 
 function Aside() {
   return (
-    <aside className="p-4 flex flex-col gap-4 justify-between [grid-area:aside] shadow-2xl">
+    <aside className="p-4 flex flex-col gap-4 justify-between [grid-area:aside] bg-gray-50">
       <section className="flex items-center justify-between">
         <Logo></Logo>
-        <IconButton icon={LuPanelLeft} />
+        <IconButton icon={LuPanelsTopLeft} />
       </section>
       <Profile name="Juan Camilo" email="jgamezc@uninorte.edu.co"></Profile>
       <Navigation />
