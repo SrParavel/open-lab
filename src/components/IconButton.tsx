@@ -1,14 +1,11 @@
-import type { ComponentType } from "react";
-
 type Props = {
-  icon: ComponentType<{ className?: string }>;
-  onClick: () => void;
+  icon: React.ComponentType<{ className?: string }>;
 };
 
-function IconButton({ icon: Icon, onClick }: Props) {
+function IconButton({ icon: Icon }: Props) {
   return (
-    <button onClick={onClick} className="p-2 hover:bg-slate-100 rounded-lg cursor-pointer transition">
-      <Icon className="size-6" />
+    <button className="hover:bg-gray-200 p-2 rounded-lg cursor-pointer">
+      <Icon className="size-6 text-gray-600" />
     </button>
   );
 }

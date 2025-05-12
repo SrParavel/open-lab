@@ -1,6 +1,8 @@
 ---
 import Aside from "../components/Aside";
 import "../styles/global.css";
+// Supports weights 100-900
+import "@fontsource-variable/onest";
 ---
 
 <!doctype html>
@@ -12,10 +14,10 @@ import "../styles/global.css";
     <meta name="generator" content={Astro.generator} />
     <title>Astro Basics</title>
   </head>
-  <body id="app">
+  <body id="app" class="bg-gray-50">
     <Aside />
-    <header class="bg-blue-500 [grid-area:header]">HEADER</header>
-    <main class="bg-green-500 [grid-area:main]">MAIN</main>
+    <header class="[grid-area:header]"></header>
+    <main class="[grid-area:main]"></main>
   </body>
 </html>
 
