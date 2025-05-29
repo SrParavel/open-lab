@@ -1,7 +1,8 @@
+
 import { cva, type VariantProps } from "class-variance-authority";
 import type { ButtonHTMLAttributes } from "react";
 
-const button = cva("rounded-lg transition active:scale-95 cursor-pointer font-semibold", {
+const button = cva("rounded-lg transition active:scale-95 cursor-pointer font-semibold shadow-lg", {
   variants: {
     variant: {
       primary: "bg-amber-600 hover:bg-amber-700 text-gray-200",
