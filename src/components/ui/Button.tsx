@@ -4,16 +4,16 @@ import type { ButtonHTMLAttributes } from "react";
 const button = cva("rounded-lg transition active:scale-95 cursor-pointer font-semibold", {
   variants: {
     variant: {
-      primary: "bg-amber-600 hover:bg-amber-700 text-gray-200",
+      primary: "bg-blue-600 hover:bg-blue-700 text-gray-200",
       secondary: "bg-indigo-400 hover:bg-indigo-500 text-gray-200",
       ghost: "hover:bg-gray-200 text-gray-600 dark:text-gray-200 dark:hover:bg-gray-900",
       outline:
         "border border-gray-600 text-gray-600 hover:bg-gray-200 dark:border-white dark:text-gray-200 dark:hover:bg-gray-800",
-      muted: "bg-gray-200 hover:bg-gray-300 text-gray-600 dark:bg-gray-900 dark:hover:bg-gray-800 dark:text-gray-200",
+      muted: "bg-gray-200 hover:bg-gray-300 text-gray-600 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-200",
     },
     size: {
       md: "text-base px-2 py-1",
-      lg: "text-lg px-3 py-1",
+      lg: "text-lg px-3 py-1 h-12",
     },
   },
   defaultVariants: {
