@@ -12,8 +12,8 @@ const button = cva("rounded-lg transition active:scale-95 cursor-pointer font-se
       muted: "bg-gray-200 hover:bg-gray-300 text-gray-600 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-200",
     },
     size: {
-      md: "text-base px-2 py-1",
-      lg: "text-lg px-3 py-1 h-12",
+      md: "text-base p-2",
+      lg: "text-lg p-3",
     },
   },
   defaultVariants: {
@@ -24,8 +24,8 @@ const button = cva("rounded-lg transition active:scale-95 cursor-pointer font-se
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>, VariantProps<typeof button> {}
 
-function Button({ className, variant, size, ...props }: ButtonProps) {
+function IconButton({ className, variant, size, ...props }: ButtonProps) {
   return <button {...props} className={button({ variant, size, className })} />;
 }
 
-export default Button;
+export default IconButton;
