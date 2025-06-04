@@ -7,7 +7,7 @@ import TextField from "../components/ui/TextField";
 import MainLayout from "../layouts/MainLayout";
 import { Link } from "react-router";
 
-function Login() {
+function Signup() {
   return (
     <MainLayout>
       <Card className="px-16 p-8">
@@ -16,20 +16,24 @@ function Login() {
           <DarkModeButton></DarkModeButton>
         </div>
         <div className="flex flex-col items-center justify-center w-sm text-center my-8">
-          <h1 className="text-3xl font-bold text-gray-800 dark:text-gray-50">¡Bienvenido!</h1>
-          <p className="text-gray-700 dark:text-gray-400">
-            Nos alegra tenerte de vuelta, escribe tus datos para iniciar sesión
-          </p>
+          <h1 className="text-3xl font-bold text-gray-800 dark:text-gray-50">¡Registrate!</h1>
+          <p className="text-gray-700 dark:text-gray-400">Dale un impulso a tus proyectos</p>
         </div>
-        <div className="grid grid-rows-3 gap-4 items-end">
+        <div className="grid grid-rows-4 gap-4 items-end">
           <TextField label="Correo Electrónico" placeholder="Escribe tu correo" icon={LuMail}></TextField>
           <TextField label="Contraseña" type="password" placeholder="Escribe tu contraseña" icon={LuLock}></TextField>
-          <Button size="lg">Iniciar Sesión</Button>
+          <TextField
+            label="Confirmar contraseña"
+            type="password"
+            placeholder="Repite tu contraseña"
+            icon={LuLock}
+          ></TextField>
+          <Button size="lg">Registrarse</Button>
         </div>
         <div className="grid items-center justify-center text-center my-8">
-          <p className="text-gray-800 dark:text-gray-50">¿No tienes cuenta?</p>
-          <Link to="/signup" className="text-blue-400">
-            Regístrate aquí
+          <p className="text-gray-800 dark:text-gray-50">¿Ya tienes cuenta?</p>
+          <Link to="/login" className="text-blue-400">
+            Ingresa aquí
           </Link>
         </div>
         <p className="text-gray-400 text-sm text-center">Todos los derechos reservados OpenLab 2025 ©</p>
@@ -38,4 +42,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Signup;

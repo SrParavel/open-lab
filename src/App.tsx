@@ -1,7 +1,8 @@
 import Login from "./views/Login";
+import Signup from "./views/Signup";
 
 function App() {
-  return <Login></Login>;
+  return <Signup></Signup>;
 }
 
 export default App;
